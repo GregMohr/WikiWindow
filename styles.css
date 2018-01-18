@@ -1,0 +1,104 @@
+﻿body {
+    overflow: hidden;
+}
+
+#header {
+    background: linear-gradient(to right, lightgrey, dimgrey);
+    padding: 0 10px 0 10px;
+    border-bottom: 2px solid black;
+}
+
+#title {
+    font-family: 'Spectral SC', serif;
+}
+
+.circular-btn {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background: radial-gradient(#FFFFFF 20%, #0F0E08 100%);
+    opacity: .8;
+}
+
+    .circular-btn:hover {
+        opacity: 1;
+    }
+
+.roundCorners {
+    border-radius: 10px;
+}
+
+#search {
+    height: 30px;
+    width: 400px;
+    border-style: ridge;
+    margin-left: 2px;
+}
+
+#main {
+    height: 500px;
+    overflow: hidden;
+}
+
+#controls {
+    border-bottom: solid black 1px;
+    background-color: grey;
+    padding: 10px 0 10px 0;
+}
+
+#rnd-icon {
+    font-family: 'Spectral SC', serif;
+    font-size: 21px;
+    line-height: 11px;
+    font-weight: bolder;
+}
+
+#control-bar {
+    padding-top: 16px;
+}
+
+#content {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+#results {
+    display: none;
+    overflow: hidden;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+
+.result {
+    display: inline-block;
+    /*border: 1px solid black;*/
+    height: 20px;
+    margin: 0;
+    overflow: hidden;
+}
+
+    .result:hover {
+        cursor: pointer;
+    }
+
+.rs-btn {
+    width: 20px;
+}
+
+#subheader {
+    display: none;
+    overflow: hidden;
+    height: 20px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    padding: 0 10px 0 19px;
+    font-size: 12px;
+}

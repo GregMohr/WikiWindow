@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WikiWindow</title>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC|Inconsolata:700" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="header" class="row">
+            <h1 id="title" class="text-left col-xs-3">WikiWindow</h1>
+            <div id="control-bar" class="col-xs-7 col-xs-offset-2">
+                <div class="row text-right">
+                    <a class="btn circular-btn" id="random-btn" title="RandoWikis" target="_blank" onclick="getRandomResults()"><span id="rnd-icon">?</span></a>
+                    <input id="search" class="roundCorners" type="text" placeholder="Search" onkeypress="getSearchResults(event)"></input>
+                    <a class="btn circular-btn" id="search-btn" title="WikiSearch" target="_blank" onclick="getSearchResults()"><i class="fa fa-search"></i></a>
+                    <a class="btn circular-btn" id="results-btn" title="Show Results" target="_blank" onclick="toggleResults()"><i id="rslt-icon" class="glyphicon glyphicon-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="results" class="row"></div>
+        <div id="subheader" class="row text-center"></div>
+        <div id="main" class="row">
+            <div id="wiki-header" class="row"></div>
+            <iframe id="content" src="" title=""></iframe>
+        </div>
+    </div><!-- end container-fluid -->
+</body>
+</html>
